@@ -1,7 +1,7 @@
 class apiError extends error {
     constructor(
         statuscode,
-        message="somethimg is wrong";
+        message="somethimg is wrong",
         errors=[],
         stack=""
     ){
