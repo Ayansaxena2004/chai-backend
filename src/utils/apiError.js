@@ -1,4 +1,4 @@
-class apiError extends error {
+class apiError extends Error {
     constructor(
         statuscode,
         message="somethimg is wrong",
@@ -15,7 +15,7 @@ class apiError extends error {
             this.stack
         }
         else{
-            errors.captureStackTrace(this,this.constructor)
+            Error.captureStackTrace(this, this.constructor)
         } 
     }
 }
